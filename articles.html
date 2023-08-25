@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width,inital scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <title>"Learn Well</title>
+
+    </head>
+    <body>
+        <body id="header">
+            <div class="container">
+                <nav>
+                    <img src="logo.jpg" class="logo">
+                        <ul>
+                            <li><a  href="index.html">Home</a></li>
+                            <li><a  href="articles.html">About</a></li>
+                            <li><a href="login.html">login page</a></li>
+                        </ul>   
+                                
+                </nav>  
+<body id="articles.html">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img 1.jpg" alt-text="learnwell">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Our Articles</h1>
+                <p class="paragraph">
+                    Learn Well is a reputed online education blog platform<br>
+                    We provide various articles on different educational topics<br>
+                    Do check out our Articles!<br>
+                </p> 
+                <div class="tab-titles">
+                    <p class="tab-links" onclick="opentab('article 1')">click here to view: Article-1</p>
+                    
+                </div>  
+                <div class="tab-contents" id="article 1">
+                    <pre>
+                    <p>             Over decades of coaching and consulting to thousands of executives in a
+                      variety of industries, however, my colleagues and I have come across
+                       people who succeed at this kind of learning. We’ve identified four 
+                       attributes they have in spades: aspiration, self-awareness, curiosity,
+                        and vulnerability. They truly want to understand and master new skills;
+                        they see themselves very clearly; they constantly think of and ask good questions;
+                        and they tolerate their own mistakes as they move up the learning curve.
+
+
+                        ASPIRATION:
+                        It’s easy to see aspiration as either there or not: 
+                        You want to learn a new skill or you don’t; you have
+                        ambition and motivation or you lack them. But great
+                        learners can raise their aspiration level—and that’s
+                        key, because everyone is guilty of sometimes resisting
+                        development that is critical to success. </p>
+                    </pre>
+                </div>  
+            
+            
+            
+    
+
+        </div>
+    </div>
+        
+            
+
+</div>
+<div id="Education">
+    <div class="container">
+        <h1 class="sub-title">Education</h1>
+        <div class="list">
+            <div id="article-2">
+                <i class="fab fa-app-store"></i>
+                <h3>Article 2</h3>
+                <pre>
+                <h1 style="text-align:center;"> Organize Your Goals
+                    <p>              Effective learning often boils down to a type of project management.
+                        In order to develop an area of expertise, we first have to set 
+                        achievable goals about what we want to learn. Then we have to develop
+                        strategies to help us reach those goals.
+                    
+                        A targeted approach to learning helps us cope with all the nagging feelings
+                        associated with gaining expertise: Am I good enough? Will I fail? What if I’m wrong? 
+                        Isn’t there something else that I’d rather be doing?
+                    
+                    While some self-carping is normal, Stanford psychologist Albert Bandura says these sorts 
+                    of negative emotions can quickly rob us of our ability to learn something new. Plus, 
+                    we’re more committed if we develop a plan with clear objectives. The research is
+                     overwhelming on this point. Studies consistently show that people
+                      with clear goals outperform people with vague aspirations like “do a good job.”
+                       By setting targets, people can manage their feelings more easily and 
+                       achieve progress with their learning. </p>
+                </pre>
+            </div>
+           
+        </div>
+    </div>            
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        
+    }
+</script>
+</body>    
+
+
+</div>
+</body>
+</body>
+</html>
